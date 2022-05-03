@@ -10,6 +10,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.AllArgsConstructor;
 
 /**
  * @author Antonio Goncalves
@@ -25,6 +26,7 @@ import lombok.Setter;
 })
 @XmlRootElement
 @Getter @Setter
+@AllArgsConstructor
 public class Item {
 
     // ======================================
@@ -63,14 +65,6 @@ public class Item {
     // ======================================
 
     public Item() {
-    }
-
-    public Item(String name, Float unitCost, String imagePath, Product product, String description) {
-        this.name = name;
-        this.unitCost = unitCost;
-        this.imagePath = imagePath;
-        this.product = product;
-        this.description = description;
     }
     
     // ======================================
